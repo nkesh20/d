@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./Mathematics.css">
+        <title>My learning Pal | შენი განათლების მეგზური</title>
+	    <link rel='icon' href = '../Icon.png'/>   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id='website-header'>
+            <a href='../index.html'><img src="../Icon.png" id='logo'></a>
+            <h1 id='website-title'>My Learning Pal</h1>
+        </div>
+
+        <div id='menu'>
+            <a class='page-navigator' href="../To-do List/toDoList.html">დღის განრიგი</a>
+			<a class='page-navigator' href='../Mathematics/Mathematics.html'>კალკულატორი</a>
+            <a class='page-navigator' href='../Timer/index.html'>პომოდორო თაიმერი</a>
+        </div>
+        
+        <div class = "container">
+            <form>
+                <h1> კვადრატული განტოლება </h1>
+			    <p>კვადრატული განტოლების ამოსახსნელად შეიყვანეთ a, b და c კოეფიციენტები</p>
+			    <hr>
+                <label for="a">a კოეფიციენტი:</label><br>
+                <input type="number" id="a" name="a">
+                <hr>
+                <label for="b">b კოეფიციენტი:</label><br>
+                <input type="number" id="b" name="b">
+                <hr>
+                <label for="c">c თავისუფალი წევრი:</label><br>
+                <input type="number" id="c" name="c">
+                
+            </form> 
+            <hr>
+            <button id = "solve" onclick="quadraticEquation()">ამოხსნა</button>
+            <hr>
+            <div id = "output"> </div>
+
+            
+
+            <form>
+                <h1> სამკუთხედი </h1>
+			    <p>სამკუთხედის ფართობისა და სიმაღლეების გასაგებად შეიყვანეთ გვერდების სიგრძეები</p>
+			    <hr>
+                <label for="side1">პირველი გვერდის სიგრძე:</label><br>
+                <input type="number" id="side1" name="side1">
+                <hr>
+                <label for="side2">მეორე გვერდის სიგრძე:</label><br>
+                <input type="number" id="side2" name="side2">
+                <hr>
+                <label for="side3">მესამე გვერდის სიგრძე:</label><br>
+                <input type="number" id="side3" name="side3">
+                
+            </form> 
+            <hr>
+            <button id = "triangle" onclick="triangle()">ფართობისა და სიმაღლეების პოვნა</button>
+            <hr>
+            <div id = "triangleOutput"> </div>
+          
+
+
+        </div>
+
+        <script id = "my-script" src = "./Mathematics.js"> </script>
+
+        <div id='footer'>
+            <p>ნიკა კეშელავა, გიგი მირზიაშვილი</p>
+            <p>Ⓒ My Learning Pal, 2021</p>
+        </div>
+       
+
+    </body>
+
+</html>

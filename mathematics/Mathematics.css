@@ -1,0 +1,81 @@
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#website-title{
+	font-family: Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: purple;
+	display: inline-block;
+	position: relative;
+	bottom: 35px;
+	left: 5px;
+}
+
+
+#menu{
+	position: absolute;
+	justify-content: space-around;	
+	top: 50px;
+	right: 35px;
+}
+
+.page-navigator{
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	color: purple;
+}
+
+.page-navigator:hover{
+	color: #ffaa20
+}
+
+#footer{
+	background-color: #ffaa20;
+	height:100px;
+	position: relative;
+	margin-top:70px;
+}
+#footer p{
+	text-align: center;
+	position: relative;
+	top: 25px;
+	color: white;
+	font-weight: bold
+}
+
+h1{
+	text-align: center;
+	color: purple;
+}
+
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+#solve, #triangle{
+
+    background-color: #ffaa20;
+	border-radius: 10px;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+
+}
