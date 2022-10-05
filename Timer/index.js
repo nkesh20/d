@@ -4,6 +4,12 @@ let isOn = false; //ტაიმერი ჩართულია თუ არ
 let isBreak = false; //შესვენებაა თუ არა იმისი ინდიკატორი
 var timer = 0; //ტაიმერის ავტომატიზირებას ახდენს.
 
+document.addEventListener("DOMContentLoaded", function() {
+	let numberOfTrees = localStorage.getItem("numberOfTrees");
+	for(var i = 0; i < numberOfTrees; i++) addTree();
+	treesCount = numberOfTrees;
+});
+
 //ეს ფუნქცია იღებს კლიკს ამუშავებს მას და რთავს/თიშავს ტაიმერს.
 function validateClick() {
 	minutes = 25;
@@ -74,5 +80,6 @@ function addTree() {
 		if(treesCount == maxTrees) forestIsFull = true;
 	}
 	treesCount++;
+	localStorage.setItem("numberOfTrees", treesCount);
 	document.getElementById('farm-subheader').innerHTML = 'შენ დარგული ხეების რაოდენობაა: ' + treesCount;
 }
